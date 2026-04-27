@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+<head>    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../CSS/user-page.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER HOME</title>
+</head>
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="./user_page.html">Home</a>
+                <a href="./user-applied.html">Applied Jobs</a>
+                <a class="delete-account" onclick="deleteAccount()">Delete Account</a>
+                <a href="./logIn.html" class="log-out" onclick="location.reload()">Log Out</a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="logo">
+            <img src="../ytulogopng.png" alt="Logo">
+        </div>
+    </header>
+
+    <form method="get" action="" class="filter-form">
+        <label for="filter">Filtre:</label>
+        <select name="filter" id="filter">
+            <option value="all">Hepsi</option>
+            <option value="it">IT</option>
+            <option value="finance">Finans</option>
+            <option value="marketing">Pazarlama</option>
+            <option value="hr">İnsan Kaynakları</option>
+            <option value="sales">Satış</option>
+            <option value="intern">Staj</option>
+            <br><br>
+
+        </select><br><br>
+
+        <label for="type">İş Tipi:</label>
+        <select name="job-type" id="type">
+            <option value="all">All</option>
+            <option value="full">Full Time</option>
+            <option value="part">Part Time</option>
+            <option value="hybrid">Hybrid</option><br><br>
+        </select><br><br>
+
+        <div class="search-container">
+            <label for="search">Arama:</label>
+            <div class="search-bar">
+                <input type="text" name="search" id="search" placeholder="İlan Ara">
+                <button type="submit">Ara</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="posts" id="jobsBox"></div>
+    <script src="../JS/user_page.js"></script>
+</body>
+</html>

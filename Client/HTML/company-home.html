@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"></html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard</title>
+    <link rel="stylesheet" href="../CSS/company-home.css">
+</head>
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="./company-home.html">Home</a>
+                <a href="./company-profile.html">Profile</a>
+                <a href="./company-post-job.html">Post a new Job</a>
+                <a href="./logIn.html" class="log-out">Log Out</a>
+                     </div>
+                </div>
+        </div>
+
+        <div class="logo">
+            <img src="../ytulogopng.png" alt="Logo">
+        </div>
+    </header>
+
+    <div class="body-container">
+
+        
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" id="closebtn" onclick="closepopup()">&times;</span>
+                <p>Welcome to the pop-up!</p>
+            </div>
+        </div>
+
+
+        <h2>Job Postings</h2>
+        <ul class="job-list">
+
+            <div id="jobList"></div>
+
+            
+
+            
+
+
+            <!-- <li><a href="/job-detail/1">Software Engineer</a></li> -->
+        </ul>
+    </div>
+
+
+
+    <!-- <div class="appliers">
+        <h2>Appliers</h2>
+        <ul class="appliers-list">
+            <div id="jobItem"></div>
+            
+        </ul>
+    </div>     burada da appliers listesi olacak daha sonra eklenecek belki abo bashir yapar -->
+
+
+            <!--here we should complete  -->
+
+
+    <script src="../JS/company.js"></script>
+</body>
+</html>
